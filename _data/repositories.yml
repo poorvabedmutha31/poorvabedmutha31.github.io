@@ -1,14 +1,20 @@
 github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
+  - poorvabedmutha31
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - poorvabedmutha31/poorvabedmutha31.github.io
+  - poorvabedmutha31/SpO2-and-Heart-Rate-measurement-using-smartphone-camera  
+  - poorvabedmutha31/Resonance-Toolbox
+  - poorvabedmutha31/DailyTasks
+  - poorvabedmutha31/Do-you-exercise-
+  - poorvabedmutha31/Classify-Facial-Expressions-with-Deep-Learning
+  - poorvabedmutha31/Emotion-Based-Music-Player
+  - poorvabedmutha31/Exoplanet-Detection
+  - poorvabedmutha31/QRS-Pan-Tompkins
+  # - alshedivat/al-folio
+  # - twbs/bootstrap
+  # - jekyll/jekyll
+  # - jquery/jquery
+  # - FortAwesome/Font-Awesome
+  # - jpswalsh/academicons
+  # - mathjax/MathJax
