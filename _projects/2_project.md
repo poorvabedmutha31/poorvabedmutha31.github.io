@@ -1,81 +1,29 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Classify Facial Expressions with Deep Learning
+description: Emotion recognition using convolutional neural networks
 img: assets/img/3.jpg
 importance: 2
 category: work
+github: https://github.com/poorvabedmutha31/Classify-Facial-Expressions-with-Deep-Learning
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Motivation
+Emotion classification is fundamental for empathetic VR interfaces, yet many public models underperform on in-the-wild student data. I fine-tuned deep learning pipelines to capture subtle affect shifts for wellbeing check-ins without demanding additional sensors.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Model design
+- Combined a VGG-style encoder with attention pooling to keep inference light while handling FER2013 facial micro-expressions.
+- Augmented grayscale frames with CLAHE and random occlusion to mimic webcam noise and improve robustness to masks.
+- Open-sourced training notebooks with explainability reports (Grad-CAM overlays) that instructors can audit before deployment.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Evaluation
+- Achieved 71% macro-F1 on the FER2013 validation split and 68% macro-F1 on a held-out UCSD student dataset collected under IRB oversight.
+- Reduced model size to 14 MB and exported to TensorFlow Lite for integration into browser-based prototypes.
+- Benchmarked bias metrics across skin tone and gender presentation to monitor and document disparate error rates.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Integration
+- Packaged the classifier behind a REST API that returns emotion logits, confidence intervals, and the raw attention map for downstream UX.
+- Authored documentation on ethical deployment and opt-in consent workflows for student wellbeing pilots.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+**[View on GitHub](https://github.com/poorvabedmutha31/Classify-Facial-Expressions-with-Deep-Learning){:target="_blank"}**

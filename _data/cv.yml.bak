@@ -8,9 +8,7 @@
     - name: Phone
       value: +1 (858) 247-9213
     - name: Location
-      value: La Jolla, San Diego, California, USA
-    - name: Office
-      value: ECE 1, Room 4314, UC San Diego
+      value: San Diego, California, USA
     - name: GitHub
       value: <a href="https://github.com/poorvabedmutha31">github.com/poorvabedmutha31</a>
     - name: LinkedIn
@@ -25,9 +23,9 @@
 - title: Research Interests
   type: list
   contents:
-    - Human-centered analytics for immersive and assistive technologies.
-    - Physiological sensing and wellbeing support for neurodivergent communities.
-    - Multimodal machine learning for social signal understanding in VR.
+    - Human-centered virtual reality analytics and social signal processing.
+    - Physiological sensing for wellbeing and neurodivergent support.
+    - Multimodal machine learning for immersive communication tools.
 
 - title: Education
   type: time_table
@@ -48,44 +46,40 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Machine Learning Researcher
-      institution: UCSD Health — Heidi Rataj; Karandeep Singh, San Diego, CA
+    - title: Junior Data Scientist
+      institution: UCSD Health — Heidi Rataj, San Diego, CA
       year: Jun 2023 - Present
       description:
-        - Leading design, development, and deployment for Willo (student wellness app) currently used by 10,000+ students.
-        - Designing recommendation systems for surfacing health services and campus events as part of a mental health product.
-        - Built data collection UX, end-to-end recommendation pipeline, and production APIs (Python, scikit-learn, Docker, AWS).
+        - Designing a recommendation system that surfaces health services and campus events for a mental health product.
+        - Built from scratch a data collection UX, initial recommendation algorithm, and API for streamlined access.
     - title: Research Assistant
       institution: Cosman Lab, UC San Diego — Prof. Pamela Cosman, San Diego, CA
       year: Oct 2022 - Present
       description:
-        - Investigating human behavior in VR interviews by designing immersive applications that model neurodivergent behaviors.
-        - Leading user studies alongside quantitative and qualitative analyses to assess participant needs and usability.
-        - Developing novel VR gaze calibration algorithms and studying head orientation and joint attention [IEEE ISMAR’23, IEEE TNSRE’24].
+        - Investigating human behavior in VR interviews by designing immersive apps that model neurodivergent behaviors.
+        - Lead user studies, quantitative and qualitative analyses, and gaze calibration algorithm development for VR data.
     - title: Research Intern
       institution: Audio Spatialization Laboratory @ Qualcomm Institute — Prof. Shahrokh Yadegari
       year: Jun 2023 - Sep 2023
       description:
-        - Created personalized HRTFs using Space3D, a real-time virtual ray-tracing and environment-aware audio spatializer.
-        - Generated high-resolution 3D head models from 2D images to evaluate reflections and spatial audio fidelity.
+        - Created personalized HRTFs in Space3D, a real-time virtual ray tracing audio spatializer with environment awareness.
+        - Generated high-resolution 3D head models from 2D imagery to evaluate reflections for the ray tracing pipeline.
     - title: Graduate Student Researcher
       institution: MOSAIC Lab, UC San Diego — Prof. Tauhidur Rahman, San Diego, CA
       year: Oct 2022 - Apr 2023
       description:
-        - Analyzed multimodal physiological data to study opioid misuse indicators from multiple sensing modalities.
-        - Designed EEG-based multimodal signal processing and ML pipelines that improved classification accuracy by ~9%.
+        - Analyzed multimodal physiological data to study opioid misuse and improved EEG-based classification accuracy by 9%.
     - title: Research Intern
       institution: Center for Cognitive and Brain Sciences, IIT Gandhinagar — Profs. Krishna Miyapuram & Derek Lomas, India
       year: Jun 2021 - Aug 2022
       description:
         - Correlated acoustic music features with EEG responses using canonical correlation analysis to predict listener enjoyment.
-        - Built an end-to-end preprocessing and feature extraction pipeline; predicted song enjoyment with ~26% above chance-level accuracy [IEEE APSCON’23, SMPC’22].
+        - Built end-to-end preprocessing and acoustic feature extraction pipelines for auditory neuroscience experiments.
     - title: Task Lead and ML Engineer
       institution: Omdena (Remote — Paris, France)
       year: Jul 2021 - Aug 2021
       description:
-        - Led an international ML engineering team to deliver an end-to-end data solution: analysis, visualization, and dashboards.
-        - Quantified the impact of reduced mobility on air quality during COVID-19 lockdowns and produced actionable visualizations.
+        - Led a global ML engineering team to deliver analysis, visualization, and dashboards on lockdown-era mobility & air quality.
 
 - title: Selected Projects
   type: time_table
@@ -93,40 +87,39 @@
     - title: "PulsePal: Innovative wearable technology solution in heart health management"
       year: May 2023
       description:
-        - Designed a prototype wearable for early heart-attack prediction by tracking multiple physiological signals and deriving risk indicators.
-        - Conducted iterative human-centered design and rapid prototyping to refine UX and clinical escalation flows.
+        - Designed a prototype device for heart attack prediction using tracking of multiple physiological parameters.
+        - Conducted iterative product design through continuous feedback based on human-centered design principles.
     - title: Friction prediction from motion
       year: May 2023
       description:
-        - Generated Blender-augmented datasets and trained physics-informed neural networks (PINNs) combined with object detection to estimate surface friction from video.
+        - Produced Blender-based augmented datasets and used computer vision with physics-informed neural networks to estimate friction.
     - title: Privacy-aware energy-efficient respiratory symptom detection
       year: Dec 2022
       description:
-        - Built a low-sampling (1 kHz) acoustic pipeline for in-the-wild cough and sneeze detection with 70% and 57% sensitivity respectively.
-        - Emphasized privacy by avoiding raw audio uploads; work awarded WellComp Best Paper at UbiComp/ISWC 2023.
+        - Built a low-sampling acoustic pipeline that detects coughs and sneezes at 1 kHz with up to 70% sensitivity (UbiComp’23 Best Paper).
     - title: Detecting predatory journals from text
       year: Jan 2021 - Jun 2021
       description:
-        - Created SciPred, an end-to-end SciBERT + MLP approach to detect predatory journals; achieved 0.92 F1 on held-out data.
+        - Created SciPred, a SciBERT + MLP model that achieved 0.92 F1, outperforming baselines by 8% on predatory journal detection.
     - title: Semantic segmentation on lung CT scans
       year: Dec 2021
       description:
-        - Developed a ResNet-based segmentation network with DAC and RMP blocks, achieving ~94.2% accuracy on 2D lung CT segmentation.
+        - Developed a ResNet-based segmentation network with DAC and RMP blocks, delivering 94.2% accuracy on 2D CT lungs.
     - title: Emotion-based music player
       year: Jul 2021
       description:
-        - Trained a CNN achieving ~96.8% facial emotion accuracy and built an Android app with Firebase + TensorFlow Lite to suggest playlists.
+        - Trained a CNN with 96.8% facial emotion accuracy and built an Android app with Firebase + TensorFlow Lite to stream playlists.
     - title: SpO2 and heart rate from smartphone camera
       year: Mar 2020
       description:
-        - Implemented fingertip video PPG processing and regression models to estimate heart rate (RMSE ~3.6 bpm) and SpO2 (~0.95% error).
+        - Implemented fingertip video signal processing and linear regression to estimate heart rate (RMSE 3.6 bpm) and SpO2 (0.95% error).
 
 - title: Publications
   type: time_table
   contents:
     - year: 2024
       items:
-        - S. Artiran, P. S. Bedmutha, P. Cosman. Analysis of gaze, head orientation and joint attention in autism with triadic VR interviews. IEEE Transactions on Neural Systems and Rehabilitation Engineering (accepted).
+        - S. Artiran, P. S. Bedmutha, P. Cosman. Analysis of gaze, head orientation and joint attention in autism with triadic VR interviews. IEEE TNSRE (accepted).
     - year: 2023
       items:
         - S. Artiran, P. S. Bedmutha, A. Li, P. Cosman. Gaze and head rotation analysis in a triadic VR job interview simulation. IEEE ISMAR Adjunct 2023.
@@ -146,12 +139,12 @@
     - year: 2023
       items:
         - Best Paper Award, ACM UbiComp/ISWC WellComp Workshop.
-        - Tapia Scholarship Awardee (outstanding women in tech).
+        - Tapia Scholarship Awardee.
         - CSE GradWIC Graduate Conference Scholarship (UC San Diego).
     - year: 2022
       items:
         - IEEE Women in Sensors and Communications (WISC) Scholarship.
-        - ECE Department Gold Medalist, Savitribai Phule Pune University (ranked 1st across the university).
+        - ECE Department Gold Medalist, Savitribai Phule Pune University.
     - year: 2021
       items:
         - IBM Women in Science and Computing Award.
@@ -161,9 +154,9 @@
   contents:
     - President (2024) and Vice President (2023) for the UCSD CSE Society for Graduate Women in Computing (GradWIC).
     - Reviewer for IEEE ISMAR 2024 and CHI Late Breaking Work 2023.
-    - UCSD ECE Department Graduate Student Council representative (2022-2024) and recipient of the 2022 Annual Award for Best Service.
+    - UCSD ECE Department Graduate Student Council representative (2022-2024) and recipient of the 2022 Best Service Award.
     - Lead organizer for the UCSD ECE 290 weekly industry and academia seminar series (2022-2023).
-    - UCSD Graduate Student Senate representative and Executive Committee member of the Election Council (2023).
+    - UCSD Graduate Student Senate representative and Election Council executive committee member (2023).
     - ECE Department Student Representative (PICT) for the Class of 2022 senate (2021-2022).
     - Student volunteer at ACM UbiComp/ISWC 2023.
 
@@ -171,5 +164,5 @@
   type: list
   contents:
     - Programming languages: Python, MATLAB, Java, C/C++, HTML, CSS, SQL.
-    - Libraries: TensorFlow, PyTorch, scikit-learn, Keras, NumPy, Pandas, OpenCV, SciPy, mne-Python, Flask, BeautifulSoup, MIR.
-    - Frameworks and tools: Git, MySQL, Android Studio, Unity, Firebase, AWS, Docker, Blender, CUDA.
+    - Libraries and frameworks: TensorFlow, PyTorch, scikit-learn, Keras, NumPy, Pandas, OpenCV, SciPy, mne-Python, Flask, BeautifulSoup, MIR.
+    - Tools and platforms: Git, MySQL, Android Studio, Unity, Firebase, AWS, Docker, Blender, CUDA.

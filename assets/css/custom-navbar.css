@@ -1,0 +1,18 @@
+/* Custom navbar logo sizing and alignment for sun icon */
+.site-sun-logo{
+  max-height:36px; /* default max height */
+  width:auto;
+  display:block;
+}
+@media (max-width:767px){
+  .site-sun-logo{ max-height:28px; }
+}
+@media (min-width:1200px){
+  .site-sun-logo{ max-height:44px; }
+}
+
+/* Remove default navbar-brand margin when using our custom icon */
+.navbar-brand.p-0{ padding:0 !important; }
+
+/* Ensure the logo stays visually left-most in fixed-top layout */
+.navbar .container > a.navbar-brand{ order: -1; }

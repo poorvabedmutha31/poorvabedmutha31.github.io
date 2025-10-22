@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of California, San Diego (UCSD)</a>
+subtitle: <a href='https://ece.ucsd.edu/'>PhD Student · Electrical & Computer Engineering, UC San Diego</a>
 
 profile:
   align: right
@@ -10,6 +10,8 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>La Jolla, San Diego, CA</p>
+    <p><a href="mailto:pbedmutha@ucsd.edu">pbedmutha@ucsd.edu</a></p>
+    <p>ECE 1, Room 4314</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
@@ -17,9 +19,20 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Master’s student in the ECE department at UCSD, focusing on Signal Processing and Mental Health. I am excited to combine these domains to develop human-centered artificial intelligence and virtual reality systems to support affected populations. Over the years, I have worked on developing a grasp of the fundamentals of these areas and have wandered on varied paths during my research journey.
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
+I am a PhD student in the Electrical and Computer Engineering department at UC San Diego, where I build human-centered analytics for immersive and assistive technologies. Working with Prof. Pamela Cosman, I study how gaze, head motion, speech, and physiological signals reveal attention and comfort in triadic VR interviews designed for neurodivergent participants. My goal is to translate these multimodal insights into equitable wellbeing tools that adapt to the people using them.
 
-<!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
+Currently, I am:
 
-<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+- Designing VR analysis pipelines that align gaze sequences, audio cues, and joint attention to flag moments where autistic candidates may need interviewer support.
+- Prototyping PulsePal, a conversational biofeedback coach that pairs pulse oximeter feedback with generative guidance to reduce stress prior to interviews.
+- Serving as Junior Data Scientist at UCSD Health to deploy a recommendation API that connects students with mental health services and campus programming.
+
+Previously, I developed personalized HRTFs with the Qualcomm Institute’s Audio Spatialization Lab, created respirator-free cough monitoring systems that earned the ACM UbiComp/ISWC WellComp Best Paper Award, and led canonical correlation analyses that linked music features with neural entrainment at IIT Gandhinagar.
+
+Through service, I founded the GradWIC mentorship circles at UCSD (now supporting 40+ mentees), review for IEEE ISMAR and CHI LBW, and organize community-building programming for ECE graduate students.
+
+**Get in touch** if you’d like to collaborate on VR accessibility, physiological sensing, or inclusive wellbeing technology.
+
+- **[Google Scholar](https://scholar.google.com/citations?user=jI689kYAAAAJ)** – Publications and citations
+- **[GitHub](https://github.com/poorvabedmutha31)** – Research code and prototypes
+- **[CV (PDF)](/assets/files/Poorva_Satish_Bedmutha_CV_Resume.pdf){:target="_blank"}** – Full academic CV

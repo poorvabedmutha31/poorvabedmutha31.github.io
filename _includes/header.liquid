@@ -2,6 +2,10 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      <!-- Left-corner sun icon -->
+      <a class="navbar-brand p-0 mr-3" href="{{ '/' | relative_url }}" style="display:flex;align-items:center;">
+        <img src="{{ '/assets/img/sun.png' | relative_url }}" alt="site sun" class="site-sun-logo" />
+      </a>
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}

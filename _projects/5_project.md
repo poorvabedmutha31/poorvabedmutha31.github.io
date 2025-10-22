@@ -1,80 +1,28 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
+title: Exoplanet Detection
+description: Astronomical data analysis for exoplanet discovery
 img: assets/img/1.jpg
 importance: 3
-category: fun
+category: work
+github: https://github.com/poorvabedmutha31/Exoplanet-Detection
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
+During my undergraduate research I explored how transit photometry data could be processed with machine learning to flag exoplanet candidates more efficiently. The goal was to build an interpretable baseline that could triage thousands of light curves before expensive astronomer review.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Pipeline
+- Retrieved Kepler and TESS light curves, detrended them with Savitzky–Golay filters, and normalized flux to remove instrument artefacts.
+- Extracted features including transit depth, duration, folding periodicity, and out-of-transit variability; supplemented with Wavelet decomposition coefficients for subtle periodic cues.
+- Trained gradient boosting and 1D CNN models while constraining for class imbalance and high false-positive penalties.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Key results
+- Reached 96% balanced accuracy and 0.94 AUC on NASA’s vetted training split.
+- Reduced manual inspection workload by half within our 5-person research group, allowing us to focus on ambiguous cases and follow-up observations.
+- Published dashboards that visualize each candidate’s phased light curve, residuals, and SHAP attributions for astronomy collaborators.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Tooling
+- Python, LightGBM, TensorFlow, AstroPy, Plotly Dash for visualization, Docker for reproducible processing pipelines.
+- Continuous integration with GitHub Actions to rerun feature extraction when new mission data releases drop.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+**[View on GitHub](https://github.com/poorvabedmutha31/Exoplanet-Detection){:target="_blank"}**
