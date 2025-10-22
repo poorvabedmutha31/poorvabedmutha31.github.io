@@ -16,7 +16,7 @@
     - name: LinkedIn
       value: <a href="https://www.linkedin.com/in/poorva-bedmutha">linkedin.com/in/poorva-bedmutha</a>
     - name: Google Scholar
-      value: <a href="https://scholar.google.com/citations?user=jI689kYAAAAJ">Google Scholar</a>
+      value: <a href="https://scholar.google.com/citations?user=jI689kYAAAAJ">Google Scholar</a> (cited by 22)
     - name: Website
       value: <a href="https://poorvabedmutha31.github.io">poorvabedmutha31.github.io</a>
     - name: ORCID
@@ -126,15 +126,15 @@
   contents:
     - year: 2024
       items:
-        - S. Artiran, P. S. Bedmutha, P. Cosman. Analysis of gaze, head orientation and joint attention in autism with triadic VR interviews. IEEE Transactions on Neural Systems and Rehabilitation Engineering (accepted).
+        - S. Artiran, P. S. Bedmutha, P. Cosman. Analysis of gaze, head orientation and joint attention in autism with triadic VR interviews. IEEE Transactions on Neural Systems and Rehabilitation Engineering (accepted). <a href="https://ieeexplore.ieee.org/abstract/document/10426761/">IEEE Xplore</a>
     - year: 2023
       items:
-        - S. Artiran, P. S. Bedmutha, A. Li, P. Cosman. Gaze and head rotation analysis in a triadic VR job interview simulation. IEEE ISMAR Adjunct 2023.
-        - M. S. Bedmutha, P. S. Bedmutha, N. Weibel. Privacy-aware respiratory symptom detection in-the-wild. ACM UbiComp/ISWC 2023 (WellComp Best Paper).
-        - P. Pandey, P. S. Bedmutha, K. P. Miyapuram, D. Lomas. Stronger correlation of music features with brain signals predicts increased levels of enjoyment. IEEE APSCON 2023.
+        - S. Artiran, P. S. Bedmutha, A. Li, P. Cosman. Gaze and head rotation analysis in a triadic VR job interview simulation. IEEE ISMAR Adjunct 2023. <a href="https://ieeexplore.ieee.org/abstract/document/10322279/">IEEE Xplore</a>
+        - M. S. Bedmutha, P. S. Bedmutha, N. Weibel. Privacy-aware respiratory symptom detection in-the-wild. ACM UbiComp/ISWC 2023 (WellComp Best Paper). <a href="https://dl.acm.org/doi/10.1145/3594739.3610733">ACM DL</a>
+        - P. Pandey, P. S. Bedmutha, K. P. Miyapuram, D. Lomas. Stronger correlation of music features with brain signals predicts increased levels of enjoyment. IEEE APSCON 2023. <a href="https://ieeexplore.ieee.org/abstract/document/10101229/">IEEE Xplore</a>
     - year: 2022
       items:
-        - P. S. Bedmutha, M. S. Bedmutha. SciPred: An end-to-end approach to classify predatory journals. ACM CODS-COMAD 2022.
+        - P. S. Bedmutha, M. S. Bedmutha. SciPred: An end-to-end approach to classify predatory journals. ACM CODS-COMAD 2022. <a href="https://dl.acm.org/doi/10.1145/3493700.3493705">ACM DL</a>
         - P. S. Bedmutha, P. Pandey, N. Ahmed, K. P. Miyapuram, D. Lomas. Canonical correlation analysis reveals neural entrainment for each song and similarity among genres. SMPC 2022.
     - year: 2021
       items:
