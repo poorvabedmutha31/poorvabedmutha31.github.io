@@ -163,6 +163,7 @@
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="cite btn btn-sm z-depth-0" role="button">Cite</a>
       {% endif %}
       {% if entry.html %}
         <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
@@ -266,6 +267,82 @@
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
         {% endhighlight %}
+      </div>
+    {% endif %}
+
+    {% if entry.bibtex_show %}
+      <!-- Hidden citation block with multiple formats -->
+      <div class="citation hidden">
+        <div class="citation-formats">
+          <p><strong>Citation Formats:</strong></p>
+          
+          <!-- BibTeX Format -->
+          <div class="citation-format">
+            <p><strong>BibTeX:</strong></p>
+            <pre>@{% if entry.type %}{{ entry.type }}{% else %}article{% endif %}{
+{%- for field in entry.bibtex_fields %}
+  {{ field }}
+{%- endfor %}
+}</pre>
+          </div>
+
+          <!-- APA Format -->
+          <div class="citation-format">
+            <p><strong>APA:</strong></p>
+            <p>
+            {%- for author in entry.author_array -%}
+              {%- if forloop.first -%}
+                {{ author.last }}, {{ author.first | slice: 0 }}.
+              {%- elsif forloop.last -%}
+                , & {{ author.last }}, {{ author.first | slice: 0 }}.
+              {%- else -%}
+                , {{ author.last }}, {{ author.first | slice: 0 }}.
+              {%- endif -%}
+            {%- endfor -%}
+            ({{ entry.year }}). <em>{{ entry.title | strip_html | rstrip: "." }}</em>.
+            {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>{% elsif entry.journal %} <em>{{ entry.journal }}</em>{% endif -%}
+            .
+            </p>
+          </div>
+
+          <!-- MLA Format -->
+          <div class="citation-format">
+            <p><strong>MLA:</strong></p>
+            <p>
+            {%- for author in entry.author_array -%}
+              {%- if forloop.first -%}
+                {{ author.last }}, {{ author.first }}.
+              {%- elsif forloop.last -%}
+                , and {{ author.first }} {{ author.last }}.
+              {%- else -%}
+                , {{ author.first }} {{ author.last }}
+              {%- endif -%}
+            {%- endfor %}
+            "{{ entry.title | strip_html }}."
+            {%- if entry.booktitle %} <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>,{% endif %}
+            {{ entry.year }}.
+            </p>
+          </div>
+
+          <!-- Chicago Format -->
+          <div class="citation-format">
+            <p><strong>Chicago:</strong></p>
+            <p>
+            {%- for author in entry.author_array -%}
+              {%- if forloop.first -%}
+                {{ author.first }} {{ author.last }}
+              {%- elsif forloop.last -%}
+                , and {{ author.first }} {{ author.last }}
+              {%- else -%}
+                , {{ author.first }} {{ author.last }}
+              {%- endif -%}
+            {%- endfor %}.
+            "{{ entry.title | strip_html }}."
+            {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>{% endif %}
+            {{ entry.year }}.
+            </p>
+          </div>
+        </div>
       </div>
     {% endif %}
 
