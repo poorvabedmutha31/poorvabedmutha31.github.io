@@ -276,16 +276,6 @@
         <div class="citation-formats">
           <p><strong>Citation Formats:</strong></p>
           
-          <!-- BibTeX Format -->
-          <div class="citation-format">
-            <p><strong>BibTeX:</strong></p>
-            <pre>@{% if entry.type %}{{ entry.type }}{% else %}article{% endif %}{
-{%- for field in entry.bibtex_fields %}
-  {{ field }}
-{%- endfor %}
-}</pre>
-          </div>
-
           <!-- APA Format -->
           <div class="citation-format">
             <p><strong>APA:</strong></p>
@@ -299,7 +289,7 @@
                 , {{ author.last }}, {{ author.first | slice: 0 }}.
               {%- endif -%}
             {%- endfor -%}
-            ({{ entry.year }}). <em>{{ entry.title | strip_html | rstrip: "." }}</em>.
+            ({{ entry.year }}). {{ entry.title | strip_html }}.
             {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>{% elsif entry.journal %} <em>{{ entry.journal }}</em>{% endif -%}
             .
             </p>
@@ -318,8 +308,8 @@
                 , {{ author.first }} {{ author.last }}
               {%- endif -%}
             {%- endfor %}
-            "{{ entry.title | strip_html }}."
-            {%- if entry.booktitle %} <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>,{% endif %}
+            "{{ entry.title | strip_html }}"
+            {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>{% endif %}
             {{ entry.year }}.
             </p>
           </div>
@@ -337,8 +327,8 @@
                 , {{ author.first }} {{ author.last }}
               {%- endif -%}
             {%- endfor %}.
-            "{{ entry.title | strip_html }}."
-            {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>{% endif %}
+            "{{ entry.title | strip_html }}"
+            {%- if entry.booktitle %} In <em>{{ entry.booktitle }}</em>,{% elsif entry.journal %} <em>{{ entry.journal }}</em>.{% endif %}
             {{ entry.year }}.
             </p>
           </div>
