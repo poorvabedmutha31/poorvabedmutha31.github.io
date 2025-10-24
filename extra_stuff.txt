@@ -1,0 +1,53 @@
+--> papers.bib
+
+@inproceedings{pandey2023stronger,
+  bibtex_show={true},
+  title={Stronger correlation of music features with brain signals predicts increased levels of enjoyment},
+  author={Pandey, Pankaj and Bedmutha, Poorva Satish and Miyapuram, Krishna Prasad and Lomas, Derek},
+  booktitle={2023 IEEE Applied Sensing Conference (APSCON)},
+  pages={1--3},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{bedmutha2022scipred,
+  bibtex_show={true},
+  title={SciPred: An end to end approach to classify predatory journals},
+  author={Bedmutha, Poorva Satish and Bedmutha, Manas Satish},
+  booktitle={5th Joint International Conference on Data Science \& Management of Data (9th ACM IKDD CODS and 27th COMAD)},
+  pages={326--327},
+  year={2022}
+}
+
+@article{bedmutha2022canonical,
+  bibtex_show={true},
+  title={Canonical correlation analysis (CCA) reveal neural entrainment for each song and similarity among genres},
+  author={Bedmutha, Poorva and Pandey, Pankaj and Ahmed, Nashra and Miyapuram, Krishna Prasad and Lomas, Derek},
+  year={2022}
+}
+
+@inproceedings{bedmutha2023privacy,
+  bibtex_show={true},
+  title={Privacy-Aware Respiratory Symptom Detection in-the-wild},
+  author={Bedmutha, Manas Satish and Bedmutha, Poorva Satish and Weibel, Nadir},
+  booktitle={Adjunct Proceedings of the 2023 ACM International Joint Conference on Pervasive and Ubiquitous Computing \& the 2023 ACM International Symposium on Wearable Computing},
+  pages={428--432},
+  year={2023}
+}
+
+@inproceedings{artiran2023gaze,  
+  bibtex_show={true},
+  title={Gaze and Head Rotation Analysis in a Triadic VR Job Interview Simulation},
+  author={Artiran, Saygin and Bedmutha, Poorva S and Li, Aaron and Cosman, Pamela},
+  booktitle={2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)},
+  pages={381--386},
+  year={2023},
+  organization={IEEE}
+}
+
+@article{gojecascaded,
+  bibtex_show={true},
+  title={Cascaded PID Control System for UAV with Gain Factor Prediction Using ML},
+  author={Goje, Shubhankar and Bedmutha, Poorva and Shah, Prajwal and Agrawal, Jagruti}
+}
+
