@@ -419,10 +419,11 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  background-color: transparent;
   font-size: 0.75rem;
   position: static;
   width: 100%;
+  margin-top: 3rem;
 
   .container {
     color: var(--global-footer-text-color);
