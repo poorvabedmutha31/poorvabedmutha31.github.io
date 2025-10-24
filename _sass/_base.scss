@@ -419,24 +419,27 @@ blockquote {
 
 // Footer - static positioning, transparent background
 footer.fixed-bottom {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.95);
   font-size: 0.75rem;
   position: static;
   width: 100%;
   margin-top: 3rem;
+  border-top: 1px solid var(--global-divider-color);
 
   .container {
-    color: var(--global-footer-text-color);
+    color: var(--global-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
 
   a {
-    color: var(--global-footer-link-color);
+    color: var(--global-theme-color);
+    opacity: 1;
+    font-weight: 500;
 
     &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
+      color: var(--global-hover-color);
+      text-decoration: underline;
     }
   }
 }
